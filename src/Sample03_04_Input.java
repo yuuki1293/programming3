@@ -1,4 +1,4 @@
-import java.util.*
+import java.util.*;
 
 public class Sample03_04_Input {
 	public static void main(String[] args) {
