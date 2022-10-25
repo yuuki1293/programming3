@@ -1,13 +1,13 @@
 public class Main {
-	static void printEvenOdd(int num) {
+	static String getEvenOdd(int num) {
 		if(num%2==0)
-			System.out.println(num+"は偶数");
+			return "偶数";
 		else
-			System.out.println(num+"は奇数");
+			return "奇数";
 	}
 	
 	public static void main(String[] args) {
-		printEvenOdd(3);
-		printEvenOdd(4);
+		System.out.println("3は" + getEvenOdd(3));
+		System.out.println("4は" + getEvenOdd(4));
 	}
 }
