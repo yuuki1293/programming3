@@ -1,9 +1,7 @@
 public class Sample09_03_Person {
 	public static void main(String[] args) {
 		Person p1 = new Person();
-		p1.name = "丘 かすみ";
-		p1.year = 2000;
-		p1.money = 500;
+		p1.set("丘 かすみ", 2000, 500);
 		
 		p1.earn(50);
 		p1.show();
@@ -11,9 +9,9 @@ public class Sample09_03_Person {
 }
 
 class Person {
-	String name;
-	int year;
-	int money;
+	private String name;
+	private int year;
+	private int money;
 	
 	void earn(int income) {
 		money += income;
@@ -29,5 +27,11 @@ class Person {
 	
 	void show() {
 		System.out.println(info());
+	}
+	
+	void set(String name, int year, int money) {
+		this.name = name;
+		this.year = year;
+		this.money = money;
 	}
 }
