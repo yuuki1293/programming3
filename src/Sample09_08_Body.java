@@ -1,4 +1,4 @@
-public class Sample09_08_Person {
+public class Sample09_08_Body {
 	public static void main(String[] args) {
 		Body2.warn(); // クラスBody2のクラスメソッドwarnの呼び出し
 
